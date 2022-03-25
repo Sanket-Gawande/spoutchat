@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+ 
+  min-height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' , Sans-Serif;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  margin: 0 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+ box-shadow: 0 0 5px rgba(0,0,0, .2);
+  padding: 15px 25px;
+}
+.header h3 {
+  margin: 0px 10px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.header .logo{
+  width: 180px;
+}
+.header .menu a{
+text-decoration: none;
+margin: 0 10px;
+color :#009875;
+}
+
+.header a img{
+  margin:0 5px;
+}
+.main .heading{
+  color:rgba(0, 0 , 0, .7);
+}
+.sub-link a {
+  text-decoration: none;
+  color : #009875;
+}
+.form	.input {
+  display: none;
+}
+.main{
+  display: flex;
+  flex-wrap: no-wrap;
+  transition: .5s;
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#sign_up_form:checked ~ .forms {
+  margin: 0 0 0 -400px;
+}
+
+form {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  height: auto;
+  box-shadow: 0 0 45px rgba(0, 0 , 0, .1);
+padding: 20px;
+}
+
+small {
+  margin: 5px 30px;
+  padding:5px;
+  display: none;
+  width:80%;
+  margin:10px auto;
+  padding: 8px 15px;
+}
+form h3 {
+  margin: 5px 20px;
+}
+.p-img,form input {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid darkcyan;
+  background: none;
+  outline: none;
+}
+.p-img {
+  border-radius: 0;
+  color: #777;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Inconsolata', monospace;
+}
+.profile_img {
+  color: #777;
+
+}
+.profile_img::file-selector-button {
+  display: none;
+}
+form button {
+  width: 80%;
+  padding: 10px 20px;
+  background: linear-gradient(to right ,darkcyan , cyan);;
+  color: #fff;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+ 
+}
+.sub-link{
+  color: #222;
+  margin: 10px 20px;
+}
+.form_link {
+  background: none;
+  padding: 0;
+  color: #00abff;
+  margin: 0 5px;
+}
+.warn {
+  margin:5px auto;
+  font-size: .8rem;
+  display:block;
+  padding: 5px 10px;
+  background:rgba(255 , 50 , 50, .05);
+  color: red;
+}
+small.success{
+  background: rgba(0, 255, 157, 0.261);
+  color: green;
+}
+footer p {
+  margin: 10px 0;
+}
+footer .bg-cyan {
+  background: linear-gradient(to right ,darkcyan , cyan);;
+  color: #fff;
+  margin: 0;
+  padding: 5px 0;
+}
+footer {
+  position: sticky;
+  top: 100%;
+  bottom: 0;
+  color: darkcyan;
+  border-top: 1px solid;
+  text-align: center;
+}
+footer i{
+  color : #009875;
+}
